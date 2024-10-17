@@ -1,0 +1,85 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.chatbot {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chatbot.closed {
+    height: 40px;
+}
+
+.chatbot.open {
+    height: 400px;
+}
+
+.chatbot-content {
+    padding: 20px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.chatbot form {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot .results {
+    margin-top: 20px;
+}
+
+.chatbot .results div {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.book-info {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.results {
+    max-height: 300px;
+    overflow-y: auto;
+}

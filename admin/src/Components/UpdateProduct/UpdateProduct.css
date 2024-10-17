@@ -1,0 +1,90 @@
+.update-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 50px;
+    margin: 30px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .updateproduct-itemfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .updateproduct-itemfield p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .updateproduct-itemfield input,
+  .updateproduct-itemfield textarea,
+  .updateproduct-itemfield select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .updateproduct-itemfield textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .updateproduct-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .updateproduct-price .updateproduct-itemfield {
+    width: 48%;
+  }
+  
+  .updateproduct-thumbnail-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .updateproduct-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .updateproduct-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 800px) {
+    .update-product {
+      box-sizing: border-box;
+      width: 95%;
+      height: 100%;
+      padding: 10px 30px;
+      margin: 20px auto;
+    }
+  
+    .updateproduct-price {
+      flex-direction: column;
+    }
+  
+    .updateproduct-price .updateproduct-itemfield {
+      width: 100%;
+    }
+  }
+  

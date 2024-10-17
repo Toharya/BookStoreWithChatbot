@@ -1,0 +1,144 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.popular-item .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Increased width */
+}
+
+.popular-item .item img {
+    width: 100%;
+    height: 300px; /* Increased height */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@media (max-width: 1280px) {
+    .popular {
+        height: auto;
+    }
+    .popular h1 {
+        font-size: 40px;
+    }
+    .popular hr {
+        width: 160px;
+        height: 4px;
+    }
+    .popular-item {
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .popular-item .item {
+        width: 220px;
+    }
+    .popular-item .item img {
+        height: 270px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .popular {
+        height: auto;
+    }
+    .popular h1 {
+        font-size: 30px;
+    }
+    .popular hr {
+        width: 120px;
+        height: 3px;
+    }
+    .popular-item {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .popular-item .item {
+        width: 200px;
+    }
+    .popular-item .item img {
+        height: 250px;
+    }
+}
+
+
+@media (min-width: 800px) and (max-width: 920px) {
+    .popular-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .popular {
+        height: auto;
+        gap: 6px;
+    }
+    .popular h1 {
+        font-size: 20px;
+    }
+    .popular hr {
+        width: 100px;
+    }
+    .popular-item {
+        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+
+    }
+    .popular-item .item {
+        width: 180px;
+    }
+    .popular-item .item img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 500px) {
+    .popular {
+        height: auto;
+    }
+    .popular-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+    .popular-item .item {
+        width: 100%;
+    }
+    .popular-item .item img {
+        height: 200px;
+    }
+}

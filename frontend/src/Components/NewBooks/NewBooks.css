@@ -1,0 +1,121 @@
+.new-books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.new-books h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.new-books hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.books .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Increased width */
+}
+
+.books .item img {
+    width: 100%;
+    height: 300px; /* Increased height */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@media (max-width: 1280px) {
+    .new-books h1 {
+        font-size: 40px;
+    }
+    .new-books hr {
+        width: 160px;
+        height: 4px;
+    }
+    .books {
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .books .item {
+        width: 220px;
+    }
+    .books .item img {
+        height: 270px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .new-books h1 {
+        font-size: 30px;
+    }
+    .new-books hr {
+        width: 120px;
+        height: 3px;
+    }
+    .books {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .books .item {
+        width: 200px;
+    }
+    .books .item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .new-books {
+        gap: 6px;
+    }
+    .new-books h1 {
+        font-size: 20px;
+    }
+    .new-books hr {
+        width: 100px;
+    }
+    .books {
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .books .item {
+        width: 180px;
+    }
+    .books .item img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 500px) {
+    .books {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-template-columns: 1fr;
+
+    }
+    .books .item {
+        width: 100%;
+    }
+    .books .item img {
+        height: 200px;
+    }
+}

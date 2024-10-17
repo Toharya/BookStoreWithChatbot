@@ -1,0 +1,124 @@
+.checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px;
+    padding-top: 50px; /* added px to fix syntax */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%; /* Make the input fields take the full width of the container */
+    height: 40px; /* Increase the height of the input fields */
+    padding: 10px; /* Add some padding for better readability */
+    font-size: 16px; /* Increase the font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5); /* Increase the size of the checkbox */
+    margin-right: 10px; /* Add some space between the checkbox and label */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Make the input fields take the full width of the container */
+    height: 40px; /* Increase the height of the input fields */
+    padding: 10px; /* Add some padding for better readability */
+    font-size: 16px; /* Increase the font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+/* Specific styles for the CVV field to make it smaller */
+input[name="cvv"] {
+    width: 80px; /* Set a smaller width suitable for 3 digits */
+    text-align: center; /* Center the text */
+}
+
+input[type="text"][name="expirationMonth"],
+input[type="text"][name="expirationYear"] {
+    width: calc(50% - 10px); /* Adjust width as needed */
+    max-width: calc(50% - 10px); /* Set maximum width */
+    height: 40px; /* Keep the height */
+    padding: 10px; /* Keep the padding */
+    font-size: 16px; /* Keep the font size */
+    border: 1px solid #ccc; /* Keep the border */
+    border-radius: 4px; /* Keep the border-radius */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+
+
+
+/* Hide the spin buttons on number input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="tel"] {
+    width: 100%; /* Make the input field take the full width of the container */
+    height: 40px; /* Set the height of the input field */
+    padding: 10px; /* Add some padding for better readability */
+    font-size: 16px; /* Set the font size */
+    border: 1px solid #ccc; /* Set border */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+.error {
+    color: red; /* Set the color of the error message */
+    font-size: 14px; /* Set the font size of the error message */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add some margin between form groups */
+}
+
+
+.confirmation-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+    /* Add styles for screens smaller than 1024px */
+    .checkout-container {
+        max-width: 500px;
+    }
+
+    input[type="text"] {
+        height: 35px; /* Adjust height for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    /* Add styles for screens smaller than 500px */
+    .checkout-container {
+        max-width: 300px;
+    }
+
+    input[type="text"] {
+        height: 30px; /* Adjust height for very small screens */
+        font-size: 12px; /* Adjust font size for very small screens */
+    }
+}
